@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://peruclave.onrender.com', // reemplaza con la URL de tu frontend en Render
+  origin: 'https://peruclave-1.onrender.com', // reemplaza con la URL de tu frontend en Render
   credentials: true
 }));
 
