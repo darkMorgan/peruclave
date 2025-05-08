@@ -9,7 +9,7 @@ const AdminDashboard = () => {
     const fetchData = async () => {
       try {
         const token = JSON.parse(localStorage.getItem("user"))?.token;
-        const response = await axios.get("http://localhost:4000/api/admin/dashboard", {
+        const response = await axios.get("https://peruclave.onrender.com/api/admin/dashboard", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setData(response.data);

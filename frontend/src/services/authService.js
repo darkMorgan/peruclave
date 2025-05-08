@@ -2,7 +2,7 @@
 import axios from "axios";
 
 export const login = async (username, password) => {
-  const response = await axios.post("http://localhost:4000/api/auth/login", {
+  const response = await axios.post("https://peruclave.onrender.com/api/auth/login", {
     username,
     password,
   });
@@ -10,7 +10,7 @@ export const login = async (username, password) => {
 };
 
 export const register = async (username, password, role) => {
-  const response = await axios.post("http://localhost:4000/api/auth/register", {
+  const response = await axios.post("https://peruclave.onrender.com/api/auth/register", {
     username,
     password,
     role,
